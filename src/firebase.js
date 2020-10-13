@@ -4,16 +4,17 @@ import 'firebase/auth';
 
 
 const firebaseConfig = {
-    apiKey: "AIzaSyARARB0By4MwECKNYG-C07lknbs55uDgUo",
-    authDomain: "chat-react-98829.firebaseapp.com",
-    databaseURL: "https://chat-react-98829.firebaseio.com",
-    projectId: "chat-react-98829",
-    storageBucket: "chat-react-98829.appspot.com",
-    messagingSenderId: "30459671353",
-    appId: "1:30459671353:web:903ff6c56727883c0f6ee8"
-  };
-  // Initialize Firebase
-  app.initializeApp(firebaseConfig);
+  apiKey: "AIzaSyDLM6dovzV0JRVDszQFh91sJz9Nh4jKiC4",
+  authDomain: "crud--react.firebaseapp.com",
+  databaseURL: "https://crud--react.firebaseio.com",
+  projectId: "crud--react",
+  storageBucket: "crud--react.appspot.com",
+  messagingSenderId: "833882539653",
+  appId: "1:833882539653:web:f2f6083c78d1d4664c0bec",
+  measurementId: "G-87R5NWJLRY"
+};
+// Initialize Firebase
+app.initializeApp(firebaseConfig);
 
 
   /* con esto tenemos acceso a la configuracion de las colleciones y a la autenticacion */

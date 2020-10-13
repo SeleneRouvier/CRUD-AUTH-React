@@ -71,6 +71,10 @@ const Login = (props) => {
                 email: res.user.email,
                 uid: res.user.uid
             })
+            await db.collection(res.user.uid).add({
+                name: 'Tarea de ejemplo',
+                fecha: Date.now()
+            })
             setEmail('')
             setPass('')
             setError(null)
@@ -135,6 +139,16 @@ const Login = (props) => {
                                 esRegistro ? 'Ya estas registrado?' : 'No tienes una cuenta?'
                             }
                         </button>
+                        {
+                            !esRegistro ? (
+                                <button className="btn btn-danger btn-lg btn-block btn-sm mt-2"
+                                    type="button"
+                                    onClick={() => props.history.push('/reset')}>
+                                    Recuperar contraseña
+                                </button>
+                            ) : null
+                        }
+                        
                     </form>
                 </div>
             </div>
